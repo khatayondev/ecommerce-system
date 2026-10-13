@@ -1,0 +1,21 @@
+{
+  "short_name": "Palace POS",
+  "name": "The Honey Palace Africa - Inventory & POS",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffa200",
+  "display": "standalone",
+  "orientation": "any"
+}

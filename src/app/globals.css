@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  
+  /* Neutral Foundation (High-Contrast Monochromatic Authority) */
+  --clr-canvas-dark: #07040d;
+  --clr-canvas-deep: #0a0614;
+  --clr-canvas-light: #ffffff;
+  --clr-canvas-tint: #fbf9fe;
+  --clr-border-dark: #262626;
+  --clr-border-light: #e5e5e5;
+  --clr-muted-fill: #f5f5f5;
+  --clr-text-primary-dark: #ffffff;
+  --clr-text-primary-light: #0a0614;
+  --clr-text-secondary: #a3a3a3;
+
+  /* Brand Accents */
+  --clr-brand-purple: #7c3aed;
+  --clr-brand-tint: #c084fc;
+  --clr-brand-surface: #1e1338;
+  --clr-gold: #ffa200;
+  --clr-gold-dark: #d07b00;
+  --clr-gold-light: #ffc863;
+
+  /* Theme Mappings */
+  --clr-bg-light: #fbf9fe;
+  --clr-card-white: #ffffff;
+  --clr-text-black: #0a0614;
+  --clr-text-muted-dark: #737373;
+}
+
+@theme {
+  --color-canvas-dark: var(--clr-canvas-dark);
+  --color-canvas-deep: var(--clr-canvas-deep);
+  --color-canvas-light: var(--clr-canvas-light);
+  --color-canvas-tint: var(--clr-canvas-tint);
+  --color-gold: var(--clr-gold);
+  --color-gold-dark: var(--clr-gold-dark);
+  --color-gold-light: var(--clr-gold-light);
+  --color-brand-purple: var(--clr-brand-purple);
+  --color-brand-tint: var(--clr-brand-tint);
+  --color-bg-light: var(--clr-bg-light);
+  --color-card-white: var(--clr-card-white);
+  --color-text-muted-dark: var(--clr-text-muted-dark);
+  
+  --font-sans: var(--font-poppins), sans-serif;
+  --font-display: var(--font-poppins), sans-serif;
+  --font-syne: var(--font-poppins), sans-serif;
+}
+
+html, body, button, input, select, textarea, optgroup {
+  font-family: var(--font-poppins), 'Poppins', sans-serif !important;
+}
+
+*:not(code):not(pre):not(.font-mono):not([class*="font-mono"]) {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-black);
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+/* Legacy Dark Theme compatibility mapping for Light/Gold Executive Theme */
+main:not(.login-page-main) .bg-bg-dark {
+  background-color: transparent !important;
+}
+main:not(.login-page-main) .bg-bg-card {
+  background-color: var(--clr-card-white) !important;
+}
+main:not(.login-page-main) .bg-bg-card-hover {
+  background-color: #e5e5e0 !important;
+}
+main:not(.login-page-main) .text-white:not(button):not(button *):not(.dark-pill):not(.dark-pill *) {
+  color: var(--clr-text-black) !important;
+}
+
+main:not(.login-page-main) .dark-pill,
+main:not(.login-page-main) .dark-pill * {
+  color: #ffffff !important;
+}
+
+/* Button contrast fixes */
+main:not(.login-page-main) button.bg-black,
+main:not(.login-page-main) button.bg-gray-900,
+main:not(.login-page-main) button.bg-gray-800,
+main:not(.login-page-main) button[class*="bg-black"],
+main:not(.login-page-main) button[class*="bg-gray-9"],
+main:not(.login-page-main) button[class*="bg-gray-8"] {
+  color: #ffffff !important;
+}
+
+main:not(.login-page-main) button.bg-white,
+main:not(.login-page-main) button.bg-gray-100,
+main:not(.login-page-main) button.bg-gray-50,
+main:not(.login-page-main) button[class*="bg-white"],
+main:not(.login-page-main) button[class*="bg-gray-1"],
+main:not(.login-page-main) button[class*="bg-gray-50"] {
+  color: var(--clr-text-black) !important;
+}
+main:not(.login-page-main) .text-text-muted {
+  color: var(--clr-text-muted-dark) !important;
+}
+main:not(.login-page-main) .border-gold\/10 {
+  border-color: rgba(208, 123, 0, 0.25) !important;
+}
+main:not(.login-page-main) .border-gold\/5 {
+  border-color: rgba(208, 123, 0, 0.15) !important;
+}
+main:not(.login-page-main) input:not([class*="bg-"]), 
+main:not(.login-page-main) select:not([class*="bg-"]), 
+main:not(.login-page-main) textarea:not([class*="bg-"]) {
+  background-color: #fbf9fe;
+  color: var(--clr-text-black);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+main:not(.login-page-main) input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Button tactile active micro-interactions */
+button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Modals overlays override to maintain light card contrast */
+main:not(.login-page-main) div.fixed.inset-0.bg-black\/60 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+main:not(.login-page-main) div.fixed.inset-0.bg-black\/60 > div {
+  background-color: var(--clr-card-white) !important;
+  color: var(--clr-text-black) !important;
+  border-color: rgba(208, 123, 0, 0.2) !important;
+}
+
+/* Portaled modals to document.body fallback guarantee */
+body > div.fixed.inset-0 > div[class*="bg-bg-card"],
+body > div.fixed.inset-0 > div[class*="bg-white"] {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-gold-dark);
+  border-radius: 9999px;
+  border: 2px solid var(--clr-bg-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-gold);
+}
+
+/* Modern Minimalist Elevation & Shadow System */
+*:not([class*="shadow"]):not([class*="ring"]):not(button):not(input):not([class*="backdrop"]) {
+  text-shadow: none;
+}
+
+/* Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Guarantee react-hot-toast notifications are always on top of all modals, sheets, dialogs, and overlays */
+.toast-container-always-on-top,
+div[data-toaster],
+div[style*="z-index: 2147483647"] {
+  z-index: 2147483647 !important;
+}
+
+/* Guarantee all full-screen modals, popups, and dialog overlays sit on top of navbars, sidebars, and sticky elements */
+div[class*="fixed inset-0"][class*="z-"],
+div[class*="fixed inset-0"][class*="z-["] {
+  z-index: 99999 !important;
+}
+

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "test-product",
+    "name": "Test Product",
+    "price": 0.50,
+    "category": "Multifloral Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779560011/3_b9sqse.jpg",
+    "spec": "Sample Pack"
+  },
+  {
+    "id": "sachet",
+    "name": "Honey Sachet Box",
+    "price": 225.00,
+    "category": "Uncategorized",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558739/Sachet_j7a69r.jpg",
+    "spec": "Box of 30"
+  },
+  {
+    "id": "gallon-4.5l",
+    "name": "4.5L Honey Gallon",
+    "price": 300.00,
+    "category": "Multifloral Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558739/WhatsApp_Image_2024-07-02_at_09.23.57_d8e90caa_hicdgu.jpg",
+    "spec": "4.5 Liters"
+  },
+  {
+    "id": "gallon-2.5l",
+    "name": "2.5L Honey Gallon",
+    "price": 170.00,
+    "category": "Multifloral Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558742/WhatsApp_Image_2024-07-02_at_09.23.56_07ba9002_nw1ogm.jpg",
+    "spec": "2.5 Liters"
+  },
+  {
+    "id": "bottle-1l",
+    "name": "1L Honey Bottle",
+    "price": 80.00,
+    "category": "Multifloral Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558744/WhatsApp_Image_2024-07-02_at_09.23.56_19e9d694_wuwhfn.jpg",
+    "spec": "1000 ml"
+  },
+  {
+    "id": "bottle-500ml",
+    "name": "500ml Honey Bottle",
+    "price": 45.00,
+    "category": "Multifloral Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558742/WhatsApp_Image_2024-07-02_at_09.23.57_d94cf352_j89um3.jpg",
+    "spec": "500 ml"
+  },
+  {
+    "id": "bottle-250ml",
+    "name": "250ml Honey Bottle",
+    "price": 25.00,
+    "category": "Multifloral Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558743/WhatsApp_Image_2024-07-02_at_09.23.56_8bdfb45a_wltxqk.jpg",
+    "spec": "250 ml"
+  },
+  {
+    "id": "acacia",
+    "name": "Specialty Acacia Honey",
+    "price": 95.00,
+    "category": "Specialty Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558742/WhatsApp_Image_2024-07-02_at_09.23.57_d94cf352_j89um3.jpg",
+    "spec": "500ml Premium Jar"
+  },
+  {
+    "id": "moringa",
+    "name": "Specialty Moringa Honey",
+    "price": 90.00,
+    "category": "Specialty Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558743/WhatsApp_Image_2024-07-02_at_09.23.56_8bdfb45a_wltxqk.jpg",
+    "spec": "500ml Premium Jar"
+  },
+  {
+    "id": "neem",
+    "name": "Specialty Neem Honey",
+    "price": 90.00,
+    "category": "Specialty Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558744/WhatsApp_Image_2024-07-02_at_09.23.56_19e9d694_wuwhfn.jpg",
+    "spec": "500ml Premium Jar"
+  },
+  {
+    "id": "baobab",
+    "name": "Specialty Baobab Honey",
+    "price": 95.00,
+    "category": "Specialty Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558742/WhatsApp_Image_2024-07-02_at_09.23.57_d94cf352_j89um3.jpg",
+    "spec": "500ml Premium Jar"
+  },
+  {
+    "id": "mango",
+    "name": "Specialty Mango Honey",
+    "price": 85.00,
+    "category": "Specialty Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558743/WhatsApp_Image_2024-07-02_at_09.23.56_8bdfb45a_wltxqk.jpg",
+    "spec": "500ml Premium Jar"
+  },
+  {
+    "id": "cashew",
+    "name": "Specialty Cashew Honey",
+    "price": 85.00,
+    "category": "Specialty Honey",
+    "image": "https://res.cloudinary.com/doysykrko/image/upload/v1779558744/WhatsApp_Image_2024-07-02_at_09.23.56_19e9d694_wuwhfn.jpg",
+    "spec": "500ml Premium Jar"
+  }
+]

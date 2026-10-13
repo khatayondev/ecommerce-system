@@ -1,0 +1,18 @@
+- [x] **Finances Page Redesign**
+  - [x] Port to Light Theme
+  - [x] Add global date filtering
+  - [x] Add visual cashflow bar
+  - [x] Implement CSV export functionality for the ledger
+  - [x] Add error handlers to `onSnapshot` listeners to prevent crashes on permission denial
+- [x] **Auth & Staff Access**
+  - [x] Streamlined auth architecture to Admin/Staff login & role-based dashboard access
+  - [x] Removed redundant public signup system (guest checkout for buyers, admin invitation for staff)
+- [x] **Two-Step Checkout Delivery Integration**
+  - [x] Add "Pending Delivery Cost" tab to `/orders/page.js`
+  - [x] Update `OrderDetailsModal.js` to show delivery fee input and submission logic for `PENDING_DELIVERY_COST` orders
+  - [x] Create/Update `/api/send-invoice/route.js` to integrate Paystack, Resend (email), and SMS (SMS utility)
+- [x] **User Management Page Redesign & Magic Link**
+  - [x] Redesign using light theme, replace tables with cards, implement slide-out panel
+  - [x] Add "Magic Link" invitations via Resend
+- [x] **Settings link in Sidebar**
+  - [x] UI/layout polishing
